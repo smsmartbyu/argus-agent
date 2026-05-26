@@ -32,7 +32,6 @@ A Python agent that monitors an [Argus](https://github.com/release-argus/Argus) 
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/argus-agent.git
 cd argus-agent
 
 # Install dependencies
@@ -56,7 +55,7 @@ Copy `.env.example` to `.env` and fill in your values:
 | `ARGUS_USERNAME` | Yes | Argus basic auth username |
 | `ARGUS_PASSWORD` | Yes | Argus basic auth password |
 | `OPENROUTER_KEY` | Yes | OpenRouter API key (`sk-or-v1-...`) |
-| `OPENROUTER_MODEL` | No | OpenRouter model ID (default: `stepfun/step-3.5-flash:free`) |
+| `OPENROUTER_MODEL` | No | OpenRouter model ID (default: `openrouter/free`) |
 | `TEAMS_WEBHOOK_URL` | Yes | Power Automate flow trigger URL |
 | `GITHUB_TOKEN` | No | GitHub PAT for higher rate limits (60 req/hr without, 5000 with) |
 | `LOG_FILE` | No | Log file path (default: `argus_monitor.log`) |
